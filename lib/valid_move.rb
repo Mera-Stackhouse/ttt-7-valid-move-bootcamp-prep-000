@@ -4,7 +4,11 @@
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
 position_taken?(board, index)
-  if board[index]
-    
+  if board[index] = "X" or "O"
+    true
+  elsif board[index] = "" || " " || "  "
+    false
+  else
+    false
   end  
 end
