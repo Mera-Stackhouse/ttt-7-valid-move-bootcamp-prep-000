@@ -1,9 +1,9 @@
 # code your #valid_move? method here
 
 def valid_move?()
-  if position_taken?
+  if position_taken? == false
     true
-  elsif !position_taken?
+  elsif position_taken? == true
     false
   end  
 end  
