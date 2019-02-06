@@ -5,11 +5,11 @@
 
 def valid_move?(board, index)
   if position_taken?(board, index) == 1
-    false
+    return false
   elsif position_taken?(board,index) == false
-    true
+    return true
   elsif position_taken?(board,index) == true
-    false
+    return false
   end  
 end  
 
@@ -19,13 +19,13 @@ def position_taken?(board, index)
   if (index < 1) || (index > 9)
     return 1
   elsif  board[index] == "X"
-    true
+    return true
   elsif board[index] == "O"
-    true
+    return true
   elsif board[index] == "" || " " || "  "
-    false
+    return false
   else
-    false
+    return false
   end  
 end
 
