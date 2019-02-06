@@ -5,6 +5,7 @@ def valid_move?()
     true
   elsif !position_taken?
     false
+  end  
 end  
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
