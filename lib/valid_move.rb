@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 
-#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 
 def valid_move?(board, index)
@@ -28,4 +28,4 @@ def position_taken?(board, index)
 end
 
 #puts board[0] ==
-#puts position_taken?(board, 0)
+puts position_taken?(board, 0)
