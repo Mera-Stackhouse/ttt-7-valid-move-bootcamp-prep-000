@@ -14,16 +14,16 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
 def position_taken?(board, index)
-  if board[index] = "X"
+  if board[index] == "X"
     true
-  elsif board[index] = "O"
+  elsif board[index] == "O"
     true
-  elsif board[index] = "" || " " || "  "
+  elsif board[index] == "" || " " || "  "
     false
   else
     false
   end  
 end
 
-puts board[0]
+puts board[0] ==
 puts position_taken?(board, 0)
